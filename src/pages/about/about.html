@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{title}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="cards-bg social-cards">
+<ion-card>
+  <ion-card-content>
+      <div padding ion-item  *ngFor="let qualification of qualifications" class="wrap-word-item" icon-left>
+        <div class="item-title"><ion-icon [name]="'logo-' + qualification.icon" [ngStyle]="{'color': qualification.color}" item-left></ion-icon>
+    {{ qualification.title }}</div>
+        <div class="item-description">{{qualification.description}}</div>
+      </div>
+  </ion-card-content>
+</ion-card>
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="cards-bg social-cards">
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="{{person.image}}">
+      </ion-avatar>
+      <h2>{{person.name}}</h2>
+      <p>{{person.birthDay.getDate()}}/{{person.birthDay.getMonth()}}/{{person.birthDay.getFullYear()}}</p>
+    </ion-item>
+    
+    <img src="img/IMG_00174.jpg">
+    <ion-card-content>
+      <div padding>
+         <strong><ion-icon name="globe"></ion-icon> Endereço: </strong><p>{{person.address}}</p>
+         <strong><ion-icon name="flag"></ion-icon>
+Naturalidade: </strong><p>{{person.placeOfBirth}}</p>
+         <strong><ion-icon name="logo-whatsapp"></ion-icon> Telefone: </strong><p><a href="tel:{{person.cellphone}}" (click)="$event" target="_system">{{person.cellphone}}&nbsp;</a></p>
+         <strong><ion-icon name="mail"></ion-icon> E-mail: </strong><p><a href="mailto:{{person.email}}" target="_system" (click)="$event">{{person.email}}&nbsp;</a></p>
+      </div>
+      <div padding *ngFor="let social of socials">
+        <ion-icon [name]="'logo-' + social.icon" [ngStyle]="{'color': social.color}" item-left></ion-icon>        
+        <a href='{{social.url}}' (click)='$event' target="_system">{{social.name}}</a>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

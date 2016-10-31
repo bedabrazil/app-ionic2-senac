@@ -1,0 +1,29 @@
+page-home {
+
+}
+.social-cards ion-col {
+    padding: 0;
+}
+.social-cards a{
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+h2.wrap-word-item{
+  font-size: 1.4em;
+  color: #444;
+  font-weight: bold;
+}
+.wrap-word-item{
+  word-wrap: break-word!important; 
+  word-break: break-all!important;
+  border-bottom: 1px solid #ccc;
+}
+.item-description{
+  padding-left:15px;
+  font-size: .9em;
+}
+.item-title{
+  padding:10px 0;
+}

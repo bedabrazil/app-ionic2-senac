@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{title}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<!--<ion-content class="card-background-page" padding>
+  <ion-card>
+    <img src="img/senac.jpg"/>
+    <div class="card-title">{{academic.name}}</div>
+    <div class="card-subtitle">
+      {{academic.address}}
+      {{academic.telphone}}
+      {{academic.email}}
+      {{academic.description}}
+      <img src="{{academic.image}}"/>
+    </div>
+  </ion-card>
+</ion-content>-->
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="img/senac.jpg"/>
+    <div class="card-title">{{academic.name}}</div>
+    <div class="card-subtitle">{{academic.address}}
+      {{academic.telphone}}
+      {{academic.email}}
+      {{academic.description}}</div>
+  </ion-card>
+
+  <ion-card *ngFor="let course of courses">
+    
+    <ion-card-content>
+      <ion-card-title>
+        <h3>Curso</h3>
+        {{course.name}}
+        </ion-card-title>
+      <p>
+        <strong>Início:</strong>
+        {{course.inicialDate.getDate()}}/{{course.inicialDate.getMonth()}}/{{course.inicialDate.getFullYear()}}
+      </p>
+      <p>
+        <strong>Final:</strong>
+        {{course.finalDate.getDate()}}/{{course.finalDate.getMonth()}}/{{course.finalDate.getFullYear()}}
+      </p>
+      <p>
+        {{course.description}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

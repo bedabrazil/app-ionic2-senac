@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="experience-page">
+  <ion-card *ngFor="let company of companies">
+    <ion-card-header>
+      {{company.title}}
+    </ion-card-header>
+    <ion-card-title>
+      {{company.subTitle}}
+    </ion-card-title>
+    <ion-card-content>
+      <div><strong>Data Inicial: {{company.initialDate.getDate()}}/{{company.initialDate.getMonth()+1}}/{{company.initialDate.getFullYear()}}</strong></div>
+      <div><strong>Data Final: {{company.finalDate.getDate()}}/{{company.finalDate.getMonth()+1}}/{{company.finalDate.getFullYear()}}</strong></div>
+      <br>
+      <h2>Principais Responsabilidades</h2>
+      <p>
+        {{company.description}}
+      </p>
+      <div class="responsabilities">
+        <span *ngFor="let responsability of company.mainResponsibilities">
+          {{responsability}}
+        </span>
+      </div>
+    </ion-card-content>
+  </ion-card>  
+</ion-content>

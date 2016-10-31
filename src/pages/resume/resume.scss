@@ -1,0 +1,53 @@
+page-resume {
+  .experience-page {
+
+    .toolbar-background {
+      background: #fff;
+      border-color: transparent;
+    }
+
+    ion-card-header {
+      height: 100%;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
+    ion-card-title {
+      padding:0;
+      padding: 10px;
+      margin-top:-20px;
+      margin-left:15px;
+      font-size: .9em;
+    }
+
+    ion-card-content {
+      margin-top:-10px;
+    }
+    .responsabilities span{
+      padding: 10px;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 2px;
+    }
+    b {
+      font-weight: 500;
+    }
+    h2{
+       text-align:center;
+       margin-bottom: 10px;
+       font-weight: bold;
+    }
+    p {
+      padding: 0 40px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #60646B;
+
+      b {
+        color: #000000;
+      }
+    }
+
+  }
+}
