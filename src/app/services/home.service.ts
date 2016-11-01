@@ -20,7 +20,7 @@ export class HomeService{
                                       '(11) 97999-8100', 
                                       'marcio@mail.com', 
                                       this.birthday, 
-                                      'assets/img/IMG_00173.png',
+                                      'assets/img/IMG_00173.jpg',
                                       this.socials
                                     );
 
