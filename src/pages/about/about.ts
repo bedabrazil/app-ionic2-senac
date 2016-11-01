@@ -12,6 +12,7 @@ export class AboutPage implements OnInit{
   public title: string = 'Qualificações';
   public qualifications: Qualification[];
   constructor(public navCtrl: NavController, public aboutService: AboutService) {}
+  
   ngOnInit() {
     this.qualifications = this.aboutService.showQualifications();
   }  
