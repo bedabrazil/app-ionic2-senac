@@ -10,7 +10,6 @@ export class HomeService{
     new Social('Facebook', 'https://www.facebook.com/marciosoares.net', 'facebook', '#3B5998'),
     new Social('Twitter', 'https://twitter.com/bymarcio', 'twitter', '#1DA1F2'),
     new Social('Linkedin', 'https://www.linkedin.com/in/bymarcio', 'linkedin', '#0177B5')
-
   ];
 
   public person: Person = new Person(
